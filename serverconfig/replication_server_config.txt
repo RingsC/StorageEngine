@@ -1,0 +1,5 @@
+XLogArchiveMode = 0;
+masterEnableStandby = 1;
+PrimaryConnInfo = host=localhost port=5432 user=foo password=foopass
+
+

@@ -1,0 +1,3 @@
+StandbyMode = 1
+slaveEnableHotStandby = 1
+PrimaryConnInfo= host=localhost port=61111 user=foo password=foopass

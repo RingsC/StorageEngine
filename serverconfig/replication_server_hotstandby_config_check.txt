@@ -1,0 +1,4 @@
+SyncRepStandbyNames = *
+masterEnableStandby = 2
+PostPortNumber = 62345 
+max_wal_senders = 5

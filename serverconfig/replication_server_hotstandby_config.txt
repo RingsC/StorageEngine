@@ -1,0 +1,3 @@
+SyncRepStandbyNames = *
+masterEnableStandby = 2
+PostPortNumber = 61111 

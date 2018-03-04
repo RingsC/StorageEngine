@@ -1,0 +1,701 @@
+                     Redland librdf RDF API Library - News
+
+2012-XX-XX Redland Version 1.0.16 Released
+
+   librdf_model_contains_statement() and
+   librdf_storage_contains_statement() now return 0 for invalid statements
+   Postgres, MySQL and Hashes storage bug fixes.
+   Multiple other API bug fixes
+   Multiple build fixes to help building on Windows. (Daniel Richard G.)
+   Requires [1]Raptor 2.0.7 or newer
+   Fixed Issues: [2]0000443, [3]0000460, [4]0000497, [5]0000518 and
+   [6]0000519
+
+   See the [7]1.0.16 Release Notes for the full details of the changes.
+
+2011-12-03 Redland Version 1.0.15 Released
+
+   Revert librdf_new_statement_from_statement() to original copy semantics
+   Add functions for cross-library (DLL) memory management
+   Added a few new small APIs.
+   Fixed Issues: [8]0000461, [9]0000468, [10]0000475, [11]0000478,
+   [12]0000483 and [13]0000485
+
+   See the [14]1.0.15 Release Notes for the full details of the changes.
+
+2011-07-23 Redland Version 1.0.14 Released
+
+   Rasqal minimum version is now 0.9.25.
+   Fixed a few URI and node reference leaks after changes for Raptor V2
+   Added parser class methods to parse from I/O stream sources
+   Added query class static method to get query language descriptions
+   Removed unused and Raptor-duplicate internal code
+   Code cleanup fixing unused variables and values via GCC 4.6, LLVM
+   [15]clang and valgrind.
+   Other minor fixes and improvements
+   Fixed Issues: [16]#0000375, [17]#0000418, [18]#0000432 and [19]#0000447
+
+   See the [20]1.0.14 Release Notes for the full details of the changes.
+
+2011-02-01 Redland Version 1.0.13 Released
+
+   Raptor V1 support was removed; Raptor minimum version is now 2.0.0
+   Rasqal minimum version is now 0.9.22.
+   Added description-style APIs for parser, serializer and query results
+   formats
+   Serializing to quad formats now works
+   Replaced remaining few abort()s in code paths with error log and
+   failure
+   Several other minor API changes
+   Fixed Issues: [21]#0000325, [22]#0000404 and [23]#0000419
+
+   See the [24]1.0.13 Release Notes for the full details of the changes.
+
+2010-10-13 Redland Version 1.0.12 Released
+
+   Enable librdf.h to be used as the top-level header in addition to
+   redland.h
+   Fix linking issues when building with GNU ld with DT_NEEDED disabled
+   Fixed Issues: [25]#0000329, [26]#0000348 [27]#0000391, [28]#0000392 and
+   [29]#0000393.
+
+   See the [30]1.0.12 Release Notes for the full details of the changes.
+
+2010-09-25 Redland Version 1.0.11 Released
+
+   Virtuoso storage backend querying now fully works.
+   Several new convenience APIs were added and others deprecated.
+   Support building with Raptor V2 API if configured with --with-raptor2.
+   Exports more functions to SWIG language bindings.
+   Switched to GIT version control [31]hosted by GitHub.
+   Many other bug fixes and improvements were made.
+   Fixed Issues: [32]#0000124, [33]#0000284, [34]#0000321, [35]#0000322,
+   [36]#0000334, [37]#0000338, [38]#0000341, [39]#0000344, [40]#0000350,
+   [41]#0000363, [42]#0000366, [43]#0000371, [44]#0000380, [45]#0000382
+   and [46]#0000383
+
+   See the [47]1.0.11 Release Notes for the full details of the changes.
+
+2009-12-16 Redland Version 1.0.10 Released
+
+   Added a [48]Virtuoso storage by Patrick van Kleef
+   Support [49]Rasqal 0.9.17 API
+   Fix compiling against sqlite 3.6.17 or newer
+   Fix modular storage dynamic loading linking problems. Several other bug
+   fixes including addressing issues: [50]Issue #0000302, [51]Issue
+   #0000304, [52]Issue #0000311, [53]Issue #0000315 and [54]Issue
+   #0000317.
+
+   See the [55]1.0.10 Release Notes for the full details of the changes.
+
+2009-04-12 Redland Version 1.0.9 Released
+
+   Made the storages (triple stores) API public and the implementations
+   modular - can be compiled externally and dynamically loaded on demand.
+   Removed Raptor and Rasqal from sources - now external build
+   dependencies.
+   Many other bug fixes including addressing issues: [56]#0000272,
+   [57]#0000282 [58]#0000283, [59]#0000285 and [60]#0000286.
+
+   See the [61]1.0.9 Release Notes for the full details of the changes.
+
+2008-07-05 Redland Version 1.0.8 Released
+
+   Updated to use [62]Rasqal 0.9.16 (from 0.9.15)
+   Updated to use [63]Raptor 1.4.18 (from 1.4.16)
+   Added a 'trees' indexed in-memory storage
+   Improvements to low-memory and other failures of resource allocation
+   API additions and changes to concepts, parser and serializer classes.
+   Fixed Issue [64]0000256
+
+   NOTE: The next release of redland will NOT include raptor and rasqal in
+   the tarball, they will be separate download dependencies.
+
+   See the [65]1.0.8 Release Notes for the full details of the changes.
+
+2007-12-24 Redland Version 1.0.7 Released
+
+   Updated to use [66]Rasqal 0.9.15 (from 0.9.14)
+   Updated to use [67]Raptor 1.4.16 (from 1.4.15)
+   Added a optional modular storage
+   Improvements to low-memory and other failures of resource allocation
+   Added URI filtering to the parser class
+   SQLite storage gains transactions and other fixes
+   Many other bug fixes addressing Issues [68]0000187, [69]0000189,
+   [70]0000203, [71]0000205, [72]0000209, [73]0000213, [74]0000215,
+   [75]0000218, [76]0000229, [77]0000230, [78]0000234, [79]0000235 and
+   [80]0000236
+
+   See the [81]1.0.7 Release Notes for the full details of the changes.
+
+2007-05-05 Redland Version 1.0.6 Released
+
+   Updated to use [82]Rasqal 0.9.14 (from 0.9.13)
+   Updated to use [83]Raptor 1.4.15 (from 1.4.13)
+   Added a new transactions API for graph changes, implemented for MySQL
+   Added a new query results formatter class
+   Many other bug fixes addressing Issues [84]#0000175, [85]#0000173,
+   [86]#0000159, [87]#0000153, [88]#0000150 and [89]#0000038
+
+   See the [90]1.0.6 Release Notes for the full details of the changes.
+
+2006-11-19 Redland Version 1.0.5 Released
+
+   Updated to use [91]Rasqal 0.9.13 (from 0.9.12)
+   Updated to use [92]Raptor 1.4.13 (from 1.4.9)
+   Several API additions
+   Parsing methods can take a NULL base URI when it is not needed
+   Added serializer methods to serialize from a stream
+   Many fixes and improvements to the SQLite storage
+   Export some more functions to the SWIG binding
+   Many minor improvements
+   Many other bug fixes addressing Issues [93]#0000092, [94]#0000103,
+   [95]#0000105, [96]#0000107, [97]#0000114, [98]#0000116, [99]#0000125,
+   [100]#0000130, [101]#0000132, [102]#0000136 and [103]#0000139.
+
+   See the [104]1.0.5 Release Notes for the full details of the changes.
+
+2006-05-05 Redland Version 1.0.4 Released
+
+   Updated to use [105]Rasqal 0.9.12 to update to SPARQL 2006-04-06 and
+   JSON results
+   Updated to use [106]Raptor 1.4.9 with many improvements
+   Fixes for several crashes in parsing and serializing.
+
+   See the [107]1.0.4 Release Notes for the full details of the changes.
+
+2006-02-15 Redland Version 1.0.3 Released
+
+   Updated to use [108]Rasqal 0.9.11 to update to SPARQL 2005-11-23
+   Updated to use [109]Raptor 1.4.8 with many improvements
+   Added a new PostgreSQL storage contributed by Shi Wenzhong
+   Created an enhanced API reference manual with gtk-doc
+   Some other minor fixes and changes
+
+   NOTE: Redland will be switching to use [110]Subversion for version
+   control after the 1.0.3 release. See the [111]Redland Subversion site
+   or the online [112]Redland installation notes for the latest
+   information.
+
+   See the [113]1.0.3 Release Notes for the full details of the changes.
+
+2005-06-10 Redland Version 1.0.2 Released
+
+   Fixed a crash when querying or searching with the API and getting no
+   results
+   Updated to use [114]Rasqal 0.9.10 to provide query results sorting such
+   as SPARQL ORDER BY and some SPARQL syntax updates. ([115]release notes)
+   Updated to use [116]Raptor 1.4.7 to to fix some crashes in the RSS tag
+   soup parser and serializer. ([117]release notes)
+
+   See the [118]1.0.2 Release Notes for the full details of the changes.
+
+2005-05-29 Redland Version 1.0.1 Released
+
+   Updated to use [119]Rasqal 0.9.9 to provide improved SPARQL query
+   support for the revised syntax ([120]release notes)
+   Updated to use [121]Raptor 1.4.6 to provide a new GRDDL parser as well
+   as updated RSS enclosures support ([122]relase notes)
+   MySQL store has changed key algorithm: NOTE: may require a store save
+   and reload
+   SQLite store now returns correct query results
+   Digest and Hash classes are now public and available to bindings
+   Empty iterators and streams now always return an object
+   Win32 portability fixes and build configuration (John Barstow)
+   Several other API additions were made.
+
+   See the [123]1.0.1 Release Notes for the full details of the changes.
+
+2005-02-06 Redland Version 1.0.0 Released
+
+   This is a mature library so it is time for 1.0.0
+   Updated to use [124]Rasqal 0.9.6 for better query and SPARQL support
+   Updated to use [125]Raptor 1.4.5 for new RDF/XML abbreviated
+   serializer, improved RSS tag soup parser and RSS 1.0 serializer
+   New experimental [126]SQLite storage
+
+   See the [127]1.0.0 Release Notes for the full details of the changes.
+
+2004-11-01 Redland Version 0.9.19 Released
+
+   License changed from LGPL 2.1/MPL 1.1 to LGPL 2.1/Apache 2
+   Updated to use [128]Rasqal 0.9.4 to provide SPARQL support
+   Updated to use [129]Raptor 1.4.2 to provide serializing of models to
+   strings in RDF/XML or N-Triples
+   Some small API additions and bug fixes.
+
+   See the [130]0.9.19 Release Notes for the full details of the changes.
+
+2004-08-03 Redland Version 0.9.18 Released
+
+   (Revert statement usage counting from 0.9.17)
+
+   This is Redland 1.0 release candidate 1
+   New [131]Query and [132]Query Results classes to support RDF querying
+   with [133]RDQL using [134]Rasqal
+   Moved the language APIS into the new [135]Redland Bindings package
+   Added a new message logging API giving structured messages
+   Updated MySQL storage ([136]Morten Frederiksen)
+   Check that duplicate statements are not added to models
+   Portability fixes for building natively on Win32 (Jose Kahan)
+   Updated to [137]Rasqal 0.9.2 and [138]Raptor 1.3.2
+   Several other minor bugs and fixes.
+
+   See the [139]0.9.17 Release Notes for the full details of the changes.
+
+2004-02-24 Redland Version 0.9.16 Released
+
+   A small but important bug fix to make the installed C headers work
+   correctly again.
+
+   See the [140]0.9.16 Release Notes for the full details of the changes.
+
+2004-01-31 Redland Version 0.9.15 Released
+
+   API CHANGE Several classes were modified to use unsigned char* for
+   UTF-8 encoded URIs and Literals
+   Update to synchronise with [141]Raptor version 1.2.0 (RDF/XML and
+   N-Triples parser) - see [142]Raptor NEWS gaining the [143]Turtle Terse
+   RDF Triple Language
+   Added storage with MySQL written by [144]Morten Frederiksen
+   Added storage with [145]AKT Triplestore
+   Added file and URI-backed in-memory storage
+   Added fixes to make Redland compile cleanly under C++ (tested with g++)
+   Added assertion checks and reporting for function arguments
+   Added method for finding statements in a context
+   Added a method for listing the contexts in a graph
+   Storage, model and serializer get/set feature methods now take and
+   return nodes
+   Improved rdfproc utility to handle multiple storage types, storage
+   options, contexts and environment variables for configuration.
+   Fix crash on reporting parser errors with % in the message
+   Improved RDF/XML serializer to chose better output names
+   Many other minor changes and fixes.
+
+   See the [146]0.9.15 Release Notes for the full list of the changes.
+
+2003-09-08 Redland Version 0.9.14 Released
+
+   Update to synchronise with [147]Raptor version 1.0.0 (RDF/XML and
+   N-Triples parser) - see [148]Raptor NEWS for the changes since 0.9.12.
+   Added a new utility program rdfproc - a general RDF processor for
+   Redland that allows command line use of the library.
+   Made the Node class intern every node.
+   Fixed the broken use of Perl UNIVERSAL::isa
+   Other minor API changes
+
+   See the [149]0.9.14 Release Notes for the full list of the changes.
+
+2003-08-28 Redland Version 0.9.13 Released
+
+   API CHANGE [150]Node The class was modifed to make objects immutable,
+   removing the set methods and to add new node type convienence methods.
+   API addition [151]Model Added a method to sync the model to the backing
+   store.
+   API addition [152]Parser Added methods to allow parsing from strings.
+   API addition [153]Statement Added method to check for partial
+   statements.
+   API addition [154]Storage Added a method to sync the backing store.
+   Better error recovery - most errors return if possible.
+   Added initial simple threading support (patches by Seth Ladd)
+   Greatly improved Python API using 2.2 features (Edd Dumbill and Matt
+   Biddulph)
+   Updated Perl, Python and Java APIs to always return new nodes and
+   statements, removing the need to consider shared object issues.
+   Updated serializing to RDF/XML to handle datatype literals
+   Update to [155]Raptor version 0.9.12 (RDF/XML and N-Triples parser) -
+   see [156]Raptor NEWS for changes since 0.9.8.
+   Extensive portability and other bug fixes.
+
+   See the [157]0.9.13 Release Notes for the full list of the changes.
+
+2003-02-13 Redland Version 0.9.12 Released
+
+   FORMAT CHANGE The persistent storage format was changed to support RDF
+   typed literals and this will require an upgrade of any existing
+   Berkeley/Sleepycat DB stores created by Redland 0.9.11 or earlier. A
+   utility redland-db-upgrade is provided that creates an updated store
+   from an existing one.
+   API CHANGE [158]Iterator and [159]Stream classes. The next/get_next
+   method is split into get_object always returning a shared object and
+   next methods. get_context method added. (get_object is called current
+   in higher level language APIs)
+   API CHANGE [160]Model class. Method add_statement no longer takes
+   ownership of the passed in statement. The caller now retains ownership.
+   API CHANGE [161]Model class. Method add_statements no longer frees the
+   passed in librdf_stream; the caller must free it now.
+   API CHANGE [162]Node and [163]Model classes. Added RDF Datatyped
+   Literals. Other literal is_wf_xml constructors and methods deprecated.
+   API CHANGE All literals methods and constructors have no mention of the
+   never-used or supported XML Space argument which is not part of an RDF
+   literal.
+   Added a script [164]utils/update-api-0912.pl to help automate the API
+   changes as far as possible or warn about those that cannot be
+   automatically updated.
+   Added contexts - Statements added to [165]Model (when using a Storage
+   that supports contexts) can take an optional [166]Node, returned by the
+   new get_context method on [167]Iterator and [168]Stream classes.
+   Many portability and compiling fixes (OSX, gcc 3.x, FreeBSD, non-gcc
+   compiler)
+   [169]Java API classes. Add finished() method replacing useless
+   finalize().
+   Use Raptor message callbacks to get parser warnings and errors
+   Build Java API working around the stupid things recent SWIG versions
+   do.
+   Make Redland work with BDB/Sleepycat DB v4 (as well as v2 and v3)
+   [170]Python API gains [171]pydoc comments and HTML derived version
+   [172]Perl and [173]Python APIs now receive Redland message callbacks
+   Redland URI class now registers with Raptor rather than specially
+   compile Raptor
+   Added RDF/XML [174]Serializer class and made higher level language APIs
+   to it
+   Update to [175]Raptor version 0.9.8 (RDF/XML and N-Triples parser) -
+   see [176]Raptor NEWS for detailed changes since 0.9.5
+   Added skeleton [177]Ruby and [178]PHP APIs
+   Major source reorganisation.
+
+   See also the [179]0.9.12 Release Notes
+
+2002-06-08 Redland Version 0.9.11 Released
+
+   Update to [180]Raptor version 0.9.5 (RDF/XML and N-Triples parser)
+   Added [181]serialization to a syntax API; with [182]N-Triples as the
+   first syntax
+   Added start of [183]query language API
+   Updated [184]Python interface to be more Pythonic, now requires python
+   2.1+
+   Added [185]Ruby API
+   Redland will now work as a perl [186]CPAN module
+   Updated [187]Perl interface - modules have been renamed. Fix programs
+   with [188]update-perl-api.pl
+   Updated [189]Java API
+   Now uses libtool to build dynamic and static libraries
+   Multiple startup/shutdowns of entire library now works.
+
+2001-08-28 Redland Version 0.9.10 Released
+
+   More work on debian packaging
+   Added [190]Raptor [191]N-Triples parser
+   Changes needed for _:name identifiers from N-Triples
+   Added [192]Java API
+
+2001-06-07 Redland Version 0.9.9 Released
+
+   Added librdf_world class to manage Redland environment startup/shutdown
+   - pervasive change throughout all other classes
+   configure improvements to try to get expat variants detected and
+   working more automatically
+   Added Debian (.deb) package support
+   SiRPAC parser wrapper now handles multi-line literals
+   Changed stream and iterator interfaces and classes to be compatible, in
+   preparation for unifying in one new filter class. NOTE: This requires
+   changes to user-code - librdf_iterator_have_elements is now
+   !librdf_iterator_is_end and librdf_iterator_set_map is now
+   librdf_iterator_add_map
+   Added perl and python interface warnings for above changes
+   Preparation work for querying for arcs to/from a resource node,
+   filtering
+   Additional examples and explanations added to perl interface
+   documentation
+   Updated to [193]Raptor RDF/XML parser 0.9.1 - many bug fixes
+
+2001-02-05 Redland Version 0.9.8 Released
+
+   Added [194]Tcl interface
+   Added [195]Raptor RDF parser, written by me (alpha quality) and made
+   some changes to support it.
+   More fixes to [196]Perl interface to fix crashes
+   Added [197]Perl [198]RDF::RSS method as_xhtml for simple RSS 1.0 to
+   (X)HTML formatting.
+
+2001-01-05 Redland Version 0.9.7 Released
+
+   Changed [199]Perl Model API - renamed get_* method names, added
+   deprecated warnings for old names.
+   Updated [200]Repat to 2000-12-24 version (plus some patches).
+   Added [201]Perl Plain Old Documentation (POD).
+   Fixed subtle [202]Perl interface object reference bugs.
+   Changed [203]Model API - add_statement now does not own the added
+   statement
+   Added to [204]Model API - get_source, get_arc, get_target return one
+   matching [205]librdf_node, not a list of them like get_sources etc. do
+   via [206]librdf_iterator.
+   Added [207]UTF-8 support for converting between UTF-8 and ISO Latin-1.
+
+2000-11-06 Redland Version 0.9.6 Released
+
+   Added python interface (2.0 and 1.5)
+   More perl interface fixes
+   Parser APIs updated to handle syntax specified by MIME type and/or URI
+   and now have features allowing the setting/querying of parser options.
+
+2000-10-20 Redland Version 0.9.5 Released
+
+   Added [208]Repat RDF parser by Jason Diamond - jason at njektilo dot
+   org
+   More perl API fixes and improvements
+   Internal changes preparing for proper reification support and use of
+   rdf:, rdfs: concepts
+
+2000-09-29 Redland Version 0.9.4 Released
+
+   Implemented perl interface
+   Created RPM construction support
+   Started work on internal RDF parser
+
+2000-08-30 Redland Version 0.9.3 Released
+
+   Implemented fast get sources, targets, arcs for storage models using
+   multiple hashes (Berkeley DB)
+   Made Berkeley DB support work for V3, two variants of V2
+   Implemented removing statements for stored models
+   Changed internal hash API arguments, which was nice.
+   Added general RDF utility example code [209]example4.c that parses
+   RDF/XML syntax, stores it and provides multiple query methods.
+   Added simple 10-line RDF example code [210]example3.c
+   SiRPAC Java parser call changed to not discard error output
+   Use streaming part of SiRPAC Java parser
+   Didn't do anything on [211]list :( but fixed several parts of code
+   marked FIXME :-).
+
+2000-08-21 Redland Version 0.9.2 Released
+
+   [212]API HTML documentation added to release.
+   configure now splits and generates sub-version numbers.
+
+2000-08-18 Redland Version 0.9.1 Released
+
+   configure warns user if no persistant storage (BDB) found
+   configure warns user if no RDF parser configured
+   Made BDB V1 fail if found by configure - does not work with Redland.
+   Some improvements to installation document.
+
+2000-08-17 Redland named
+
+   Redland renamed from librdf, license changed to LGPL/MPL from LGPL/BSD.
+
+2000-06-21 Redland first CVS commit
+
+   Redland 'born' with first CVS commit: It compiles and builds as a GNU
+   automake/conf suite with 'make distcheck' and 'make check'
+     __________________________________________________________________
+
+   Copyright (C) 2000-2010 [213]Dave Beckett
+   Copyright (C) 2000-2005 [214]University of Bristol
+
+References
+
+   1. http://librdf.org/raptor/
+   2. http://bugs.librdf.org/mantis/view.php?id=443
+   3. http://bugs.librdf.org/mantis/view.php?id=460
+   4. http://bugs.librdf.org/mantis/view.php?id=497
+   5. http://bugs.librdf.org/mantis/view.php?id=518
+   6. http://bugs.librdf.org/mantis/view.php?id=519
+   7. RELEASE.html#rel1_0_16
+   8. http://bugs.librdf.org/mantis/view.php?id=461
+   9. http://bugs.librdf.org/mantis/view.php?id=468
+  10. http://bugs.librdf.org/mantis/view.php?id=475
+  11. http://bugs.librdf.org/mantis/view.php?id=478
+  12. http://bugs.librdf.org/mantis/view.php?id=483
+  13. http://bugs.librdf.org/mantis/view.php?id=485
+  14. RELEASE.html#rel1_0_15
+  15. http://clang-analyzer.llvm.org/
+  16. http://bugs.librdf.org/mantis/view.php?id=
+  17. http://bugs.librdf.org/mantis/view.php?id=
+  18. http://bugs.librdf.org/mantis/view.php?id=
+  19. http://bugs.librdf.org/mantis/view.php?id=
+  20. RELEASE.html#rel1_0_14
+  21. http://bugs.librdf.org/mantis/view.php?id=325
+  22. http://bugs.librdf.org/mantis/view.php?id=404
+  23. http://bugs.librdf.org/mantis/view.php?id=419
+  24. RELEASE.html#rel1_0_13
+  25. http://bugs.librdf.org/mantis/view.php?id=329
+  26. http://bugs.librdf.org/mantis/view.php?id=348
+  27. http://bugs.librdf.org/mantis/view.php?id=391
+  28. http://bugs.librdf.org/mantis/view.php?id=392
+  29. http://bugs.librdf.org/mantis/view.php?id=393
+  30. RELEASE.html#rel1_0_12
+  31. http://github.com/dajobe/librdf
+  32. http://bugs.librdf.org/mantis/view.php?id=124
+  33. http://bugs.librdf.org/mantis/view.php?id=284
+  34. http://bugs.librdf.org/mantis/view.php?id=321
+  35. http://bugs.librdf.org/mantis/view.php?id=322
+  36. http://bugs.librdf.org/mantis/view.php?id=334
+  37. http://bugs.librdf.org/mantis/view.php?id=338
+  38. http://bugs.librdf.org/mantis/view.php?id=341
+  39. http://bugs.librdf.org/mantis/view.php?id=344
+  40. http://bugs.librdf.org/mantis/view.php?id=350
+  41. http://bugs.librdf.org/mantis/view.php?id=363
+  42. http://bugs.librdf.org/mantis/view.php?id=366
+  43. http://bugs.librdf.org/mantis/view.php?id=371
+  44. http://bugs.librdf.org/mantis/view.php?id=380
+  45. http://bugs.librdf.org/mantis/view.php?id=382
+  46. http://bugs.librdf.org/mantis/view.php?id=383
+  47. RELEASE.html#rel1_0_11
+  48. http://sourceforge.net/projects/virtuoso/
+  49. http://librdf.org/rasqal/
+  50. http://bugs.librdf.org/mantis/view.php?id=302
+  51. http://bugs.librdf.org/mantis/view.php?id=304
+  52. http://bugs.librdf.org/mantis/view.php?id=311
+  53. http://bugs.librdf.org/mantis/view.php?id=315
+  54. http://bugs.librdf.org/mantis/view.php?id=315
+  55. RELEASE.html#rel1_0_10
+  56. http://bugs.librdf.org/mantis/view.php?id=272
+  57. http://bugs.librdf.org/mantis/view.php?id=282
+  58. http://bugs.librdf.org/mantis/view.php?id=283
+  59. http://bugs.librdf.org/mantis/view.php?id=285
+  60. http://bugs.librdf.org/mantis/view.php?id=286
+  61. RELEASE.html#rel1_0_9
+  62. http://librdf.org/rasqal/
+  63. http://librdf.org/raptor/
+  64. http://bugs.librdf.org/mantis/view.php?id=0000256
+  65. RELEASE.html#rel1_0_8
+  66. http://librdf.org/rasqal/
+  67. http://librdf.org/raptor/
+  68. http://bugs.librdf.org/mantis/view.php?id=0000187
+  69. http://bugs.librdf.org/mantis/view.php?id=0000189
+  70. http://bugs.librdf.org/mantis/view.php?id=0000203
+  71. http://bugs.librdf.org/mantis/view.php?id=0000205
+  72. http://bugs.librdf.org/mantis/view.php?id=0000209
+  73. http://bugs.librdf.org/mantis/view.php?id=0000213
+  74. http://bugs.librdf.org/mantis/view.php?id=0000215
+  75. http://bugs.librdf.org/mantis/view.php?id=0000218
+  76. http://bugs.librdf.org/mantis/view.php?id=0000229
+  77. http://bugs.librdf.org/mantis/view.php?id=0000230
+  78. http://bugs.librdf.org/mantis/view.php?id=0000234
+  79. http://bugs.librdf.org/mantis/view.php?id=0000235
+  80. http://bugs.librdf.org/mantis/view.php?id=0000236
+  81. RELEASE.html#rel1_0_7
+  82. http://librdf.org/rasqal/
+  83. http://librdf.org/raptor/
+  84. http://bugs.librdf.org/mantis/view.php?id=159
+  85. http://bugs.librdf.org/mantis/view.php?id=159
+  86. http://bugs.librdf.org/mantis/view.php?id=159
+  87. http://bugs.librdf.org/mantis/view.php?id=153
+  88. http://bugs.librdf.org/mantis/view.php?id=150
+  89. http://bugs.librdf.org/mantis/view.php?id=38
+  90. RELEASE.html#rel1_0_6
+  91. http://librdf.org/rasqal/
+  92. http://librdf.org/raptor/
+  93. http://bugs.librdf.org/mantis/view.php?id=92
+  94. http://bugs.librdf.org/mantis/view.php?id=103
+  95. http://bugs.librdf.org/mantis/view.php?id=105
+  96. http://bugs.librdf.org/mantis/view.php?id=107
+  97. http://bugs.librdf.org/mantis/view.php?id=114
+  98. http://bugs.librdf.org/mantis/view.php?id=116
+  99. http://bugs.librdf.org/mantis/view.php?id=125
+ 100. http://bugs.librdf.org/mantis/view.php?id=130
+ 101. http://bugs.librdf.org/mantis/view.php?id=132
+ 102. http://bugs.librdf.org/mantis/view.php?id=136
+ 103. http://bugs.librdf.org/mantis/view.php?id=139
+ 104. RELEASE.html#rel1_0_5
+ 105. http://librdf.org/rasqal/
+ 106. http://librdf.org/raptor/
+ 107. RELEASE.html#rel1_0_4
+ 108. http://librdf.org/rasqal/
+ 109. http://librdf.org/raptor/
+ 110. http://subversion.tigris.org/
+ 111. http://svn.librdf.org/
+ 112. http://librdf.org/INSTALL.html
+ 113. RELEASE.html#rel1_0_3
+ 114. http://librdf.org/rasqal/
+ 115. http://librdf.org/rasqal/RELEASE.html#rel0_9_10
+ 116. http://librdf.org/raptor/
+ 117. http://librdf.org/raptor/RELEASE.html#rel1_4_7
+ 118. RELEASE.html#rel1_0_2
+ 119. http://librdf.org/rasqal/
+ 120. http://librdf.org/rasqal/RELEASE.html#rel0_9_9
+ 121. http://librdf.org/raptor/
+ 122. http://librdf.org/raptor/RELEASE.html#rel1_4_6
+ 123. RELEASE.html#rel1_0_1
+ 124. http://librdf.org/rasqal/
+ 125. http://librdf.org/raptor/
+ 126. http://www.sqlite.org/
+ 127. RELEASE.html#rel1_0_0
+ 128. http://librdf.org/rasqal/
+ 129. http://librdf.org/raptor/
+ 130. RELEASE.html#rel0_9_19
+ 131. docs/api/query.html
+ 132. docs/api/query_results.html
+ 133. http://www.w3.org/Submission/2004/SUBM-RDQL-20040109/
+ 134. http://librdf.org/rasqal/
+ 135. http://librdf.org/bindings/
+ 136. http://purl.org/net/morten/
+ 137. http://librdf.org/rasqal/
+ 138. http://librdf.org/raptor/
+ 139. RELEASE.html#rel0_9_17
+ 140. RELEASE.html#rel0_9_16
+ 141. http://librdf.org/raptor/
+ 142. http://librdf.org/raptor/NEWS.html
+ 143. http://www.dajobe.org/2004/01/turtle/
+ 144. http://purl.org/net/morten/
+ 145. http://triplestore.aktors.org/
+ 146. RELEASE.html#rel0_9_15
+ 147. http://librdf.org/raptor/
+ 148. http://librdf.org/raptor/NEWS.html
+ 149. RELEASE.html#rel0_9_14
+ 150. docs/api/node.html
+ 151. docs/api/model.html
+ 152. docs/api/parser.html
+ 153. docs/api/statement.html
+ 154. docs/api/storage.html
+ 155. http://librdf.org/raptor/
+ 156. http://librdf.org/raptor/NEWS.html
+ 157. RELEASE.html#rel0_9_13
+ 158. docs/api/iterator.html
+ 159. docs/api/stream.html
+ 160. docs/api/model.html
+ 161. docs/api/model.html
+ 162. docs/api/node.html
+ 163. docs/api/model.html
+ 164. utils/update-api-0912.pl
+ 165. docs/api/model.html
+ 166. docs/api/node.html
+ 167. docs/api/iterator.html
+ 168. docs/api/stream.html
+ 169. docs/java.html
+ 170. docs/python.html
+ 171. docs/pydoc/RDF.html
+ 172. docs/perl.html
+ 173. docs/python.html
+ 174. docs/api/serializer.html
+ 175. http://librdf.org/raptor/
+ 176. http://librdf.org/raptor/NEWS.html
+ 177. docs/ruby.html
+ 178. docs/php.html
+ 179. RELEASE.html#rel0_9_12
+ 180. http://librdf.org/raptor/
+ 181. docs/api/serializer.html
+ 182. http://www.w3.org/TR/rdf-testcases/#ntriples
+ 183. docs/api/query.html
+ 184. docs/python.html
+ 185. docs/ruby.html
+ 186. http://www.cpan.org/
+ 187. docs/perl.html
+ 188. perl/update-perl-api.pl
+ 189. docs/java.html
+ 190. http://librdf.org/raptor/
+ 191. http://www.w3.org/TR/rdf-testcases/#ntriples
+ 192. docs/java.html
+ 193. http://librdf.org/raptor/
+ 194. docs/tcl.html
+ 195. http://librdf.org/raptor/
+ 196. docs/perl.html
+ 197. docs/perl.html
+ 198. docs/pod/RDF/RSS.html
+ 199. docs/pod/RDF/Model.html
+ 200. http://injektilo.org/rdf/repat.html
+ 201. docs/pod/RDF.html
+ 202. docs/perl.html
+ 203. docs/api/model.html
+ 204. docs/api/model.html
+ 205. docs/api/node.html
+ 206. docs/api/iterator.html
+ 207. docs/api/utf8.html
+ 208. http://injektilo.org/rdf/repat.html
+ 209. example4.c
+ 210. example3.c
+ 211. TODO.html
+ 212. docs/api/index.html
+ 213. http://www.dajobe.org/
+ 214. http://www.bristol.ac.uk/

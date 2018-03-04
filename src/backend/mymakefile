@@ -1,0 +1,7 @@
+all:
+	g++  -fPIC $(CPPFLAGS) $(LDFLAGS)  -c -o ../../bin/FDPGAdapter.o ../interface/FDPGAdapter.cpp
+	g++  -fPIC $(CPPFLAGS) $(LDFLAGS)  -c -o ../../bin/StorageEngineExceptionUniversal.o ../interface/StorageEngineExceptionUniversal.cpp
+	ar rcs ../../bin/libpostgres.a ../../bin/*.o
+	rm ../../bin/*.o
+clean:
+	rm -f ../../bin/libpostgres.a

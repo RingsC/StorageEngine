@@ -1,0 +1,43 @@
+PROJECT(Examples)
+
+ADD_DEFINITIONS(-DHAVE_TIME_H)
+
+SET(FILES_SRC
+	example5.c
+)
+
+
+SET(ALL_INCLUDE 
+	${CMAKE_CURRENT_SOURCE_DIR}/../src 
+	${CMAKE_CURRENT_BINARY_DIR}/../src 
+	)
+INCLUDE_DIRECTORIES(
+	${ALL_INCLUDE}
+)
+SET(ALL_LIBS 
+	${CMAKE_CURRENT_BINARY_DIR}/../../raptor2/src/${CMAKE_BUILD_TYPE}
+	${CMAKE_CURRENT_BINARY_DIR}/../../rasqal/src/${CMAKE_BUILD_TYPE}
+	${CMAKE_CURRENT_BINARY_DIR}/../src/${CMAKE_BUILD_TYPE}
+)
+LINK_DIRECTORIES(
+	${ALL_LIBS})
+
+message("${ALL_LIBS}")
+
+ADD_EXECUTABLE(redland_example ${FILES_SRC})
+TARGET_LINK_LIBRARIES(redland_example ${RASQAL_NAME} ${RAPTOR2_NAME} ${REDLAND_NAME})
+INSTALL(
+	TARGETS redland_example
+	RUNTIME DESTINATION server/bin
+	COMPONENT test
+	)
+
+#SET(file_ex so)
+#IF(MSVC)
+#	SET(file_ex dll)
+#ENDIF(MSVC)
+#INSTALL(
+#	FILES ../../libxml2/lib/${CMAKE_SYSTEM_NAME}/${sys_bit}/libxml2.${file_ex}
+#	DESTINATION server/bin
+#	COMPONENT test
+#	)

@@ -1,0 +1,191 @@
+/* rasqal_config.h */
+
+
+/* Release version as a decimal */
+#define RASQAL_VERSION @RASQAL_VERSION_DECIMAL@
+
+/* Version number of package */
+#define RASQAL_VERSION_STRING "@VERSION@"
+
+/* Major version number */
+#define RASQAL_VERSION_MAJOR @RASQAL_VERSION_MAJOR@
+
+/* Minor version number */
+#define RASQAL_VERSION_MINOR @RASQAL_VERSION_MINOR@
+
+/* Release version number */
+#define RASQAL_VERSION_RELEASE @RASQAL_VERSION_RELEASE@
+
+#cmakedefine HAVE_ERRNO_H
+#cmakedefine HAVE_FCNTL_H
+#cmakedefine HAVE_GETOPT_H
+#cmakedefine HAVE_LIMITS_H
+#cmakedefine HAVE_MATH_H
+#cmakedefine HAVE_SETJMP_H
+#cmakedefine HAVE_STDDEF_H
+#cmakedefine HAVE_STDLIB_H
+#cmakedefine HAVE_STRING_H
+#cmakedefine HAVE_UNISTD_H
+#cmakedefine HAVE_SYS_PARAM_H
+#cmakedefine HAVE_SYS_STAT_H
+#cmakedefine HAVE_SYS_TIME_H
+#cmakedefine HAVE_TIME_H
+#cmakedefine TIME_WITH_SYS_TIME
+#cmakedefine HAVE_FLOAT_H
+#cmakedefine HAVE_STDINT_H
+
+#cmakedefine HAVE_ACCESS
+#cmakedefine HAVE__ACCESS
+#cmakedefine HAVE_GETOPT
+#cmakedefine HAVE_GETOPT_LONG
+#cmakedefine HAVE_GETTIMEOFDAY
+#cmakedefine HAVE_ISASCII
+#cmakedefine HAVE_SETJMP
+#cmakedefine HAVE_SNPRINTF
+#cmakedefine HAVE__SNPRINTF
+#cmakedefine HAVE_STAT
+#cmakedefine HAVE_STRCASECMP
+#cmakedefine HAVE_STRICMP
+#cmakedefine HAVE__STRICMP
+#cmakedefine HAVE_STRTOK_R
+#cmakedefine HAVE_VASPRINTF
+#cmakedefine HAVE_VSNPRINTF
+#cmakedefine HAVE__VSNPRINTF
+
+#cmakedefine RASQAL_REGEX_PCRE
+#cmakedefine RASQAL_UUID_NONE
+#cmakedefine RASQAL_DECIMAL_NONE
+#cmakedefine RASQAL_DIGEST_INTERNAL
+
+#define SIZEOF_UNSIGNED_CHAR		@SIZEOF_UNSIGNED_CHAR@
+#define SIZEOF_UNSIGNED_SHORT		@SIZEOF_UNSIGNED_SHORT@
+#define SIZEOF_UNSIGNED_INT		@SIZEOF_UNSIGNED_INT@
+#define SIZEOF_UNSIGNED_LONG		@SIZEOF_UNSIGNED_LONG@
+#define SIZEOF_UNSIGNED_LONG_LONG	@SIZEOF_UNSIGNED_LONG_LONG@
+
+#cmakedefine RASQAL_QUERY_SPARQL
+#cmakedefine RASQAL_QUERY_LAQRS
+
+
+#ifdef WIN32
+
+#define WIN32_LEAN_AND_MEAN 1
+
+#include <windows.h>
+#include <io.h>
+#include <memory.h>
+
+#  if !defined(HAVE_ACCESS) && defined(HAVE__ACCESS)
+#    define access(p,m)		_access(p,m)
+#  endif
+#  ifndef HAVE_STRCASECMP
+#    if defined(HAVE__STRICMP)
+#      define strcasecmp(a,b)	_stricmp(a,b)
+#    elif defined(HAVE_STRICMP)
+#      define strcasecmp(a,b)	stricmp(a,b)
+#    endif
+#  endif
+#  if !defined(HAVE_SNPRINTF) && defined(HAVE__SNPRINTF)
+#    define snprintf(buf, nbytes, f, ...) _snprintf_s(buf, nbytes, nbytes - 1, f, ##__VA_ARGS__)
+#  endif
+#  if !defined(HAVE_VSNPRINTF) && defined(HAVE__VSNPRINTF)
+#	 define vsnprintf(buf, nbytes, f, ...) _vsnprintf_s(buf, nbytes, nbytes - 1, f, ##__VA_ARGS__)
+#  endif
+
+/* definition from winsock2.h */
+#ifndef _TIMEVAL_DEFINED
+#define _TIMEVAL_DEFINED
+typedef struct timeval {
+  long tv_sec;
+  long tv_usec;
+} timeval;
+#endif
+
+struct timezone
+{
+  int tz_minuteswest; /* minutes West of Greenwich */
+  int tz_dsttime;     /* type of dst correction */
+};
+
+int rasqal_gettimeofday(struct timeval *tv, struct timezone *tz);
+#undef HAVE_GETTIMEOFDAY
+
+#include <float.h>
+#define isnan(n) _isnan(n)
+/* no round function available */
+#define round(x) floor(x+0.5)
+
+
+/* These are SPARQL token definitions */
+#ifdef OPTIONAL
+#undef OPTIONAL
+#endif
+
+#ifdef DELETE
+#undef DELETE
+#endif
+
+#ifdef IN
+#undef IN
+#endif
+
+#ifdef GROUP
+#undef GROUP
+#endif
+
+
+#define HAVE_C99_VSNPRINTF 1
+
+/* for access() which is POSIX but doesn't seem to have the defines in VC */
+#ifndef R_OK
+#define R_OK 4
+#endif
+
+#  ifdef _MSC_VER
+#    if _MSC_VER >= 1300
+#      define __func__		__FUNCTION__
+#    else
+       /* better than nothing */
+#      define raptor_str(s)	#s
+#      define __func__		"func@" __FILE__ ":" raptor_str(__LINE__)
+#    endif
+#  endif
+
+/* 
+ * Defines that come from config.h
+ */
+
+
+/* This is a SPARQL token define */
+#ifdef OPTIONAL
+#undef OPTIONAL
+#endif
+
+/* bison: output uses ERROR in an enum which breaks if this is defined */
+#ifdef ERROR
+#undef ERROR
+#endif
+
+/* flex: const is available */
+#define YY_USE_CONST
+/* looks like the .c files define this anyway */
+/* #define YY_NO_UNISTD_H */
+
+#undef RASQAL_INLINE
+#define RASQAL_INLINE __inline
+
+/* Use raptor to provide triples */
+#define RAPTOR_TRIPLES_SOURCE_RAPTOR 1
+
+/* Use redland to provide triples */
+/* #define RAPTOR_TRIPLES_SOURCE_REDLAND 1 */
+
+/* Use PCRE regex library */
+//#define RASQAL_REGEX_PCRE 1
+
+#ifdef _DEBUG
+/*#define RASQAL_DEBUG 1*/
+#endif
+
+#endif //WIN32
+/* end rasqal_config.h */

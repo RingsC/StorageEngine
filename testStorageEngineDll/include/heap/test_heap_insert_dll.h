@@ -1,0 +1,27 @@
+#ifndef TEST_HEAP_INSERT_DLL_H
+#define TEST_HEAP_INSERT_DLL_H
+
+#define test_insert_long_data_len_1020 "testinserttestinserttestinserttestinserttestinserttestinserttestinserttestinserttestinserttestinsert\
+		   testinserttestinserttestinserttestinserttestinserttestinserttestinserttestinserttestinserttestinsertt\
+		   estinserttestinserttestinserttestinserttestitestinserttestinserttestinserttestinserttestinserttestinserttestinserttestinserttestinserttestinsert\
+		   testinserttestinserttestinserttestinserttestinserttestinserttestinserttestinserttestinserttestinsertt\
+		   estinserttestinserttestinserttestinserttestitestinserttestinserttestinserttestinserttestinserttestinserttestinserttestinserttestinserttestinsert\
+		   testinserttestinserttestinserttestinserttestinserttestinserttestinserttestinserttestinserttestinsertt\
+		   estinserttestinserttestinserttestinserttestitestinserttestinserttestinserttestinserttestinserttestinserttestinserttestinserttestinserttestinsert\
+		   testinserttestinserttestinserttestinserttestinserttestinserttestinserttestinserttestinserttestinsertt\
+		   estinserttestinserttestinserttestinserttesti"
+
+//为测试创建一张表
+void createTable();
+
+//删除测试所创建的表
+void dropTable();
+bool test_heap_insert_dll_000();
+bool test_heap_insert_dll_001();
+bool test_heap_insert_dll_002();
+bool test_heap_insert_dll_003();
+bool test_heap_insert_dll_004();
+bool test_heap_insert_dll_005();
+bool test_heap_insert_dll_006();
+bool fun();
+#endif

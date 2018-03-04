@@ -1,0 +1,1 @@
+bool test_performbdb_heap_create();

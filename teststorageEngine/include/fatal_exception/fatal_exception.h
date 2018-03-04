@@ -1,0 +1,10 @@
+bool fatal_exception_test();
+bool panic_exception_test();
+bool test_object_in_use_exception();
+bool test_tuple_update_concurrent_exception();
+bool test_table_space_already_exists();
+bool test_two_masters_exception();
+bool test_unique_violation_exception();
+bool test_object_not_exist();
+bool test_out_of_memory();
+bool test_not_in_transaction();

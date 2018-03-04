@@ -1,0 +1,474 @@
+/* src/rdf_config.h.in.  Generated from configure.ac by autoheader.  */
+
+/* Define if building universal (internal helper macro) */
+#cmakedefine AC_APPLE_UNIVERSAL_BUILD
+
+/* Define to 1 if you have the `argz_add' function. */
+#cmakedefine HAVE_ARGZ_ADD
+
+/* Define to 1 if you have the `argz_append' function. */
+#cmakedefine HAVE_ARGZ_APPEND
+
+/* Define to 1 if you have the `argz_count' function. */
+#cmakedefine HAVE_ARGZ_COUNT
+
+/* Define to 1 if you have the `argz_create_sep' function. */
+#cmakedefine HAVE_ARGZ_CREATE_SEP
+
+/* Define to 1 if you have the <argz.h> header file. */
+#cmakedefine HAVE_ARGZ_H
+
+/* Define to 1 if you have the `argz_insert' function. */
+#cmakedefine HAVE_ARGZ_INSERT
+
+/* Define to 1 if you have the `argz_next' function. */
+#cmakedefine HAVE_ARGZ_NEXT
+
+/* Define to 1 if you have the `argz_stringify' function. */
+#cmakedefine HAVE_ARGZ_STRINGIFY
+
+/* BDB has close method with 2 args */
+#cmakedefine HAVE_BDB_CLOSE_2_ARGS
+
+/* BDB defines DBC */
+#cmakedefine HAVE_BDB_CURSOR
+
+/* BDB cursor method has 4 arguments */
+#cmakedefine HAVE_BDB_CURSOR_4_ARGS
+
+/* BDB defines DB_TXN */
+#cmakedefine HAVE_BDB_DB_TXN
+
+/* BDB has fd method with 2 args */
+#cmakedefine HAVE_BDB_FD_2_ARGS
+
+/* Have BDB hash support */
+#cmakedefine HAVE_BDB_HASH
+
+/* BDB has open method with 6 args */
+#cmakedefine HAVE_BDB_OPEN_6_ARGS
+
+/* BDB has open method with 7 args */
+#cmakedefine HAVE_BDB_OPEN_7_ARGS
+
+/* BDB has set_flags method */
+#cmakedefine HAVE_BDB_SET_FLAGS
+
+/* Define to 1 if the system has the type `byte'. */
+#cmakedefine HAVE_BYTE
+
+/* Define to 1 if you have the `closedir' function. */
+#cmakedefine HAVE_CLOSEDIR
+
+/* BDB has dbopen method */
+#cmakedefine HAVE_DBOPEN
+
+/* BDB has db_create method */
+#cmakedefine HAVE_DB_CREATE
+
+/* Define to 1 if you have the <db.h> header file. */
+#cmakedefine HAVE_DB_H
+
+/* BDB has db_open method */
+#cmakedefine HAVE_DB_OPEN
+
+/* Define to 1 if you have the declaration of `cygwin_conv_path', and to 0 if
+   you don't. */
+#cmakedefine HAVE_DECL_CYGWIN_CONV_PATH
+
+/* Define to 1 if you have the <dirent.h> header file. */
+#cmakedefine HAVE_DIRENT_H
+
+/* Define if you have the GNU dld library. */
+#cmakedefine HAVE_DLD
+
+/* Define to 1 if you have the <dld.h> header file. */
+#cmakedefine HAVE_DLD_H
+
+/* Define to 1 if you have the `dlerror' function. */
+#cmakedefine HAVE_DLERROR
+
+/* Define to 1 if you have the <dlfcn.h> header file. */
+#cmakedefine HAVE_DLFCN_H
+
+/* Define to 1 if you have the <dl.h> header file. */
+#cmakedefine HAVE_DL_H
+
+/* Define if you have the _dyld_func_lookup function. */
+#cmakedefine HAVE_DYLD
+
+/* Define to 1 if you have the <errno.h> header file. */
+#cmakedefine HAVE_ERRNO_H
+
+/* Define to 1 if the system has the type `error_t'. */
+#cmakedefine HAVE_ERROR_T
+
+/* Define to 1 if you have the <fcntl.h> header file. */
+#cmakedefine HAVE_FCNTL_H
+
+/* Define to 1 if you have the `getenv' function. */
+#cmakedefine HAVE_GETENV
+
+/* Define to 1 if you have the `getopt' function. */
+#cmakedefine HAVE_GETOPT
+
+/* Define to 1 if you have the <getopt.h> header file. */
+#cmakedefine HAVE_GETOPT_H
+
+/* Define to 1 if you have the `getopt_long' function. */
+#cmakedefine HAVE_GETOPT_LONG
+
+/* Define to 1 if you have the `gettimeofday' function. */
+#cmakedefine HAVE_GETTIMEOFDAY
+
+/* Define to 1 if you have the <inttypes.h> header file. */
+#cmakedefine HAVE_INTTYPES_H
+
+/* Define if you have the libdl library or equivalent. */
+#cmakedefine HAVE_LIBDL
+
+/* Define if libdlloader will be built on this platform */
+#cmakedefine HAVE_LIBDLLOADER
+
+/* Define to 1 if you have the <libpq-fe.h> header file. */
+#cmakedefine HAVE_LIBPQ_FE_H
+
+/* Have local MD5 digest */
+#cmakedefine HAVE_LOCAL_MD5_DIGEST
+
+/* Have local RIPEMD160 digest */
+#cmakedefine HAVE_LOCAL_RIPEMD160_DIGEST
+
+/* Have local SHA1 digest */
+#cmakedefine HAVE_LOCAL_SHA1_DIGEST
+
+/* Define this if a modern libltdl is already installed */
+#cmakedefine HAVE_LTDL
+
+/* Define to 1 if you have the <mach-o/dyld.h> header file. */
+#cmakedefine HAVE_MACH_O_DYLD_H
+
+/* Define to 1 if you have the `memcmp' function. */
+#cmakedefine HAVE_MEMCMP
+
+/* Define to 1 if you have the <memory.h> header file. */
+#cmakedefine HAVE_MEMORY_H
+
+/* Define to 1 if you have the `mkstemp' function. */
+#cmakedefine HAVE_MKSTEMP
+
+/* Define to 1 if you have the `mktemp' function. */
+#cmakedefine HAVE_MKTEMP
+#cmakedefine HAVE__MKTEMP
+
+#cmakedefine HAVE_ACCESS
+#cmakedefine HAVE__ACCESS
+#cmakedefine HAVE_SNPRINTF
+#cmakedefine HAVE__SNPRINTF
+#cmakedefine HAVE_STRICMP
+#cmakedefine HAVE__STRICMP
+#cmakedefine HAVE_VSNPRINTF
+#cmakedefine HAVE__VSNPRINTF
+#cmakedefine HAVE_CLOSE
+#cmakedefine HAVE__CLOSE
+#cmakedefine HAVE_UNLINK
+#cmakedefine HAVE__UNLINK
+
+/* have MYSQL_OPT_RECONNECT declared */
+#cmakedefine HAVE_MYSQL_OPT_RECONNECT
+
+/* Define to 1 if you have the `opendir' function. */
+#cmakedefine HAVE_OPENDIR
+
+/* Define if libtool can extract symbol lists from object files. */
+#cmakedefine HAVE_PRELOADED_SYMBOLS
+
+/* Define to 1 if you have the <pthread.h> header file. */
+#cmakedefine HAVE_PTHREAD_H
+
+/* Define to 1 if you have the `readdir' function. */
+#cmakedefine HAVE_READDIR
+
+/* Define if you have the shl_load function. */
+#cmakedefine HAVE_SHL_LOAD
+
+/* Define to 1 if you have the <sqlite3.h> header file. */
+#cmakedefine HAVE_SQLITE3_H
+
+/* Define to 1 if you have the <sqlite.h> header file. */
+#cmakedefine HAVE_SQLITE_H
+
+/* Define to 1 if you have the <stddef.h> header file. */
+#cmakedefine HAVE_STDDEF_H
+
+/* Define to 1 if you have the <stdint.h> header file. */
+#cmakedefine HAVE_STDINT_H
+
+/* Define to 1 if you have the <stdlib.h> header file. */
+#cmakedefine HAVE_STDLIB_H
+
+/* Define to 1 if you have the <strings.h> header file. */
+#cmakedefine HAVE_STRINGS_H
+
+/* Define to 1 if you have the <string.h> header file. */
+#cmakedefine HAVE_STRING_H
+
+/* Define to 1 if you have the `strlcat' function. */
+#cmakedefine HAVE_STRLCAT
+
+/* Define to 1 if you have the `strlcpy' function. */
+#cmakedefine HAVE_STRLCPY
+
+/* Define to 1 if you have the <sys/dl.h> header file. */
+#cmakedefine HAVE_SYS_DL_H
+
+/* Define to 1 if you have the <sys/stat.h> header file. */
+#cmakedefine HAVE_SYS_STAT_H
+
+/* Define to 1 if you have the <sys/time.h> header file. */
+#cmakedefine HAVE_SYS_TIME_H
+
+/* Define to 1 if you have the <sys/types.h> header file. */
+#cmakedefine HAVE_SYS_TYPES_H
+
+/* Define to 1 if you have the <time.h> header file. */
+#cmakedefine HAVE_TIME_H
+
+/* Define to 1 if you have the `tmpnam' function. */
+#cmakedefine HAVE_TMPNAM
+
+/* Define to 1 if the system has the type `u32'. */
+#cmakedefine HAVE_U32
+
+/* Define to 1 if the system has the type `u64'. */
+#cmakedefine HAVE_U64
+
+/* Define to 1 if you have the <unistd.h> header file. */
+#cmakedefine HAVE_UNISTD_H
+
+/* This value is set to 1 to indicate that the system argz facility works */
+#cmakedefine HAVE_WORKING_ARGZ
+
+/* Run time assertion checks. */
+#cmakedefine LIBRDF_ASSERT
+
+/* Print run time assertion check failure messages. */
+#cmakedefine LIBRDF_ASSERT_MESSAGES
+
+/* Release version as a decimal */
+#define LIBRDF_VERSION_DECIMAL @LIBRDF_VERSION_DECIMAL@
+
+/* Major version number */
+#define LIBRDF_VERSION_MAJOR @LIBRDF_VERSION_MAJOR@
+
+/* Minor version number */
+#define LIBRDF_VERSION_MINOR @LIBRDF_VERSION_MINOR@
+
+/* Release version number */
+#define LIBRDF_VERSION_RELEASE @LIBRDF_VERSION_RELEASE@
+
+/* Define if the OS needs help to load dependent libraries for dlopen(). */
+#cmakedefine LTDL_DLOPEN_DEPLIBS
+
+/* Define to the system default library search path. */
+#cmakedefine LT_DLSEARCH_PATH
+
+/* The archive extension */
+#cmakedefine LT_LIBEXT
+
+/* The archive prefix */
+#cmakedefine LT_LIBPREFIX
+
+/* Define to the extension used for runtime loadable modules, say, ".so". */
+#cmakedefine LT_MODULE_EXT
+
+/* Define to the name of the environment variable that determines the run-time
+   module search path. */
+#cmakedefine LT_MODULE_PATH_VAR
+
+/* Define to the sub-directory in which libtool stores uninstalled libraries.
+   */
+#cmakedefine LT_OBJDIR
+
+/* Define to the shared library suffix, say, ".dylib". */
+#cmakedefine LT_SHARED_EXT
+
+/* Build storage backends as modules */
+#cmakedefine MODULAR_LIBRDF
+
+/* Define if dlsym() requires a leading underscore in symbol names. */
+#cmakedefine NEED_USCORE
+
+/* Define to 1 if your C compiler doesn't accept -c and -o together. */
+#cmakedefine NO_MINUS_C_MINUS_O
+
+/* Name of package */
+#cmakedefine PACKAGE
+
+/* Define to the address where bug reports for this package should be sent. */
+#cmakedefine PACKAGE_BUGREPORT
+
+/* Define to the full name of this package. */
+#cmakedefine PACKAGE_NAME
+
+/* Define to the full name and version of this package. */
+#cmakedefine PACKAGE_STRING
+
+/* Define to the one symbol short name of this package. */
+#cmakedefine PACKAGE_TARNAME
+
+/* Define to the home page for this package. */
+#cmakedefine PACKAGE_URL
+
+/* Define to the version of this package. */
+#cmakedefine PACKAGE_VERSION
+
+/* SQLite API version */
+#cmakedefine REDLAND_SQLITE_API
+
+/* The size of `unsigned char', as computed by sizeof. */
+#define SIZEOF_UNSIGNED_CHAR @SIZEOF_UNSIGNED_CHAR@
+
+/* The size of `unsigned int', as computed by sizeof. */
+#define SIZEOF_UNSIGNED_INT @SIZEOF_UNSIGNED_INT@
+
+/* The size of `unsigned long', as computed by sizeof. */
+#define SIZEOF_UNSIGNED_LONG @SIZEOF_UNSIGNED_LONG@
+
+/* The size of `unsigned long long', as computed by sizeof. */
+#define SIZEOF_UNSIGNED_LONG_LONG @SIZEOF_UNSIGNED_LONG_LONG@
+
+/* define to SQLINTEGER if not defined in the ODBC headers */
+#cmakedefine SQLLEN
+
+/* define to SQLUINTEGER if not defined in the ODBC headers */
+#cmakedefine SQLULEN
+
+/* Define to 1 if you have the ANSI C header files. */
+#cmakedefine STDC_HEADERS
+
+/* Building file storage */
+#cmakedefine STORAGE_FILE
+
+/* Building hashes storage */
+#cmakedefine STORAGE_HASHES
+
+/* Building memory storage */
+#cmakedefine STORAGE_MEMORY
+
+/* Building MySQL storage */
+#cmakedefine STORAGE_MYSQL
+
+/* Building PostgreSQL storage */
+#cmakedefine STORAGE_POSTGRESQL
+
+/* Building SQLite storage */
+#cmakedefine STORAGE_SQLITE
+
+/* Building trees storage */
+#cmakedefine STORAGE_TREES
+
+/* build _declspec(dllexport) */
+#cmakedefine LIBRDF_INTERNAL
+
+/* Building 3store storage */
+#cmakedefine STORAGE_TSTORE
+
+/* Building Virtuoso storage */
+#cmakedefine STORAGE_VIRTUOSO
+
+/* Define to 1 if you can safely include both <sys/time.h> and <time.h>. */
+#cmakedefine TIME_WITH_SYS_TIME
+
+/* Version number of package */
+#define VERSION "@VERSION@"
+
+/* Use POSIX threads */
+#cmakedefine WITH_THREADS
+
+/* Define WORDS_BIGENDIAN to 1 if your processor stores words with the most
+   significant byte first (like Motorola and SPARC, unlike Intel). */
+#if defined AC_APPLE_UNIVERSAL_BUILD
+# if defined __BIG_ENDIAN__
+#  define WORDS_BIGENDIAN 1
+# endif
+#else
+# ifndef WORDS_BIGENDIAN
+#  undef WORDS_BIGENDIAN
+# endif
+#endif
+
+/* Define so that glibc/gnulib argp.h does not typedef error_t. */
+#cmakedefine __error_t_defined
+
+/* Define to empty if `const' does not conform to ANSI C. */
+#cmakedefine const
+
+/* Define to a type to use for `error_t' if it is not otherwise available. */
+#cmakedefine error_t
+
+
+#ifdef WIN32
+
+#define WIN32_LEAN_AND_MEAN 1
+
+#include <windows.h>
+#include <io.h>
+#include <memory.h>
+
+#  if !defined(HAVE_ACCESS) && defined(HAVE__ACCESS)
+#    define access(p,m)		_access(p,m)
+#  endif
+#  ifndef HAVE_STRCASECMP
+#    if defined(HAVE__STRICMP)
+#      define strcasecmp(a,b)	_stricmp(a,b)
+#    elif defined(HAVE_STRICMP)
+#      define strcasecmp(a,b)	stricmp(a,b)
+#    endif
+#  endif
+#  if !defined(HAVE_SNPRINTF) && defined(HAVE__SNPRINTF)
+#    define snprintf(buf, nbytes, f, ...) _snprintf_s(buf, nbytes, nbytes - 1, f, ##__VA_ARGS__)
+#  endif
+#  if !defined(HAVE_VSNPRINTF) && defined(HAVE__VSNPRINTF)
+#    define vsnprintf(buf, nbytes, f, ...) _vsnprintf_s(buf, nbytes, nbytes - 1, f, ##__VA_ARGS__)
+#  endif
+
+#  if !defined(HAVE_CLOSE) && defined(HAVE__CLOSE)
+#    define close		_close
+#  endif
+
+#  if !defined(HAVE_UNLINK) && defined(HAVE__UNLINK)
+#    define unlink		_unlink
+#  endif
+
+#  if !defined(HAVE_MKTEMP) && defined(HAVE__MKTEMP)
+#    define mktemp		_mktemp
+#  endif
+
+/* get _isnan() since it is not in math.h */
+#include <float.h>
+#ifndef isnan
+#define isnan(d) (_isnan(d))
+#endif
+
+/* for access() which is POSIX but doesn't seem to have the defines in VC */
+#ifndef R_OK
+#define F_OK 0
+#define R_OK 4
+#endif
+
+#  ifdef _MSC_VER
+#    if _MSC_VER >= 1300
+#      define __func__		__FUNCTION__
+#    else
+       /* better than nothing */
+#      define raptor_str(s)	#s
+#      define __func__		"func@" __FILE__ ":" raptor_str(__LINE__)
+#    endif
+#  endif
+
+#undef REDLAND_INLINE
+#define REDLAND_INLINE __inline
+
+
+#endif //WIN32

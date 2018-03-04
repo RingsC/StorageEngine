@@ -1,0 +1,1 @@
+int test_bgwriter_000();
